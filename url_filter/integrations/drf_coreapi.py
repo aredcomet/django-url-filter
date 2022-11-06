@@ -6,10 +6,9 @@ import coreschema
 from django import forms
 from django.db.models.constants import LOOKUP_SEP
 
+from .drf import URLFilterBackend
 from ..fields import MultipleValuesField
 from ..filtersets import FilterSet
-from .drf import URLFilterBackend
-
 
 DESCRIPTION = {
     "contains": "Match when string contains given substring",

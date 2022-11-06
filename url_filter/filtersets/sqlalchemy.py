@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, print_function, unicode_literals
+
 import inspect
 from functools import partial
 
@@ -25,12 +26,11 @@ from sqlalchemy.types import (
     String,
 )
 
+from .base import BaseModelFilterSet
 from ..backends.sqlalchemy import SQLAlchemyFilterBackend
 from ..exceptions import SkipFilter
 from ..filters import Filter
 from ..utils import SubClassDict
-from .base import BaseModelFilterSet
-
 
 __all__ = ["SQLAlchemyModelFilterSet"]
 

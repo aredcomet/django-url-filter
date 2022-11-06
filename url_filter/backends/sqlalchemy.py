@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, print_function, unicode_literals
+
 import itertools
 
 from sqlalchemy import false, func
@@ -7,7 +8,6 @@ from sqlalchemy.orm import class_mapper
 from sqlalchemy.sql.expression import not_
 
 from .base import BaseFilterBackend
-
 
 __all__ = ["SQLAlchemyFilterBackend"]
 

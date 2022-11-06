@@ -4,8 +4,8 @@ from __future__ import absolute_import, print_function, unicode_literals
 from django.core.exceptions import FieldDoesNotExist
 from django.db.models.constants import LOOKUP_SEP
 
-from ..utils import suppress
 from .base import BaseFilterBackend
+from ..utils import suppress
 
 
 class DjangoFilterBackend(BaseFilterBackend):

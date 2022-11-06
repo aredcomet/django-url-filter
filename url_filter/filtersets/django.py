@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import absolute_import, print_function, unicode_literals
+
 import operator
 
 from django import forms
@@ -7,11 +8,10 @@ from django.conf import settings
 from django.db import models
 from django.db.models.fields.related import ForeignObjectRel, RelatedField
 
+from .base import BaseModelFilterSet, ModelFilterSetOptions
 from ..exceptions import SkipFilter
 from ..filters import Filter
 from ..utils import SubClassDict
-from .base import BaseModelFilterSet, ModelFilterSetOptions
-
 
 __all__ = ["ModelFilterSet", "DjangoModelFilterSetOptions"]
 
